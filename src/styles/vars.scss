@@ -1,13 +1,16 @@
-$black: #999;
-$red: #FF1901;
-$green: #086401;
-$yellow: #FEFF01;
 
+$red: #db2c32;
+$green: #005200;
+$yellow: #FEFF01;
+$black: darken(desaturate($green, 25%), 15%);
+
+$yellow-x-light: lighten(desaturate($yellow, 45%), 45%);
+$brown-x-light: lighten(mix($red, $green), 65%);
 
 $font-family: arial, helvetica, sans-serif;
 
-$font-size-xs: 10px;
-$font-size-sm: 12px;
+$font-size-xs: 12px;
+$font-size-sm: 14px;
 $font-size-md: 16px;
 $font-size-lg: 24px;
 $font-size-xl: 28px;

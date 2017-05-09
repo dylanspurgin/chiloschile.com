@@ -4,6 +4,7 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: $yellow-x-light;
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change
@@ -16,6 +17,10 @@ html {
 *:after,
 *:before {
     box-sizing: inherit;
+}
+
+a {
+    color: $red;
 }
 
 h1 {
@@ -42,11 +47,14 @@ h2 {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-
-    background-color: gray;
+    padding: 0 40px;
 }
 
 .site-content {
+    flex: 1;
+    background-color: $brown-x-light;
+}
+.content-row {
     padding: 40px;
 }
 </style>
