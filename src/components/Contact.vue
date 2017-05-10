@@ -68,7 +68,7 @@
                     <div v-if="formSubmitted && !formSuccess" class="thanks">
                         <h3>Uh Oh!</h3>
                         <p>There was a problem submitting the contact form. Please <a href="#" v-on:click.stop.prevent="showForm()">try again</a>.</p>
-                        <p>If the problem persists, send us an email to <span class="strong">john<span>@</span>chiloschile.com</span>.</p>
+                        <p>If the problem persists, send us an email to <span class="strong">info<span>@</span>chiloschile.com</span>.</p>
                     </div>
                 </section>
 
