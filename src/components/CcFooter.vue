@@ -1,7 +1,5 @@
 <style lang="scss" scoped>
 footer {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
 
     height: 60px;
@@ -14,11 +12,19 @@ footer {
             margin-right: 20px;
         }
     }
+    .copyright {
+        text-align: right;
+    }
+    @media (max-width: $ipad-max-width) {
+        .copyright {
+            text-align: left;
+        }
+    }
 }
 </style>
 
 <template>
-    <footer class="site-padding boxed">
+    <footer class="content-padding boxed stacked-on-mobile">
         <nav>
             <router-link class="menu-item" :to="{name: 'Home'}">
                 Home</router-link>

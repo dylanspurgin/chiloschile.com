@@ -20,6 +20,11 @@ h2 {
     font-size: $font-size-xl;
     line-height: $font-size-xl;
 }
+
+
+/*
+ * Building blocks
+ */
 .site-content {
     h1.section-header,
     h2.section-header {
@@ -30,12 +35,73 @@ h2 {
     }
 }
 
+// Add to the first section on a page
+// to push content down below logo circle
+.header-padding {
+    padding-top: 80px;
+}
+@media (max-width: $mobile-max-width) {
+    .header-padding {
+        padding-top: 0px;
+    }
+}
+
+.cc-panel {
+    padding: 20px 40px;
+    background-color: $white;
+    border-radius: 6px;
+    border: solid 1px $green;
+}
+
 img.inline-image {
     width: 200px;
     border: solid 2px $red;
     border-radius: 3px;
     float: left;
-    margin: auto 20px 20px auto;
+    margin: auto 20px 8px auto;
+}
+
+// For UI elements whose children should be
+// side by side on desktop
+// and stacked on mobile/table
+.stacked-on-mobile {
+    display: flex;
+    flex-direction: row;
+    &>* {
+        flex-grow: 1;
+    }
+    &>:first-child {
+        padding-right: 40px;
+    }
+}
+@media (max-width: $ipad-max-width) {
+    .stacked-on-mobile {
+        flex-direction: column;
+        &>:first-child {
+            padding-right: 0;
+        }
+    }
+}
+
+
+/*
+ * Display helpers
+ */
+.italic {
+    font-style: italic;
+}
+.strong {
+    font-weight: bold;
+}
+@media (min-width: $ipad-pro-min-width) {
+    .hidden-tablet {
+        display: none;
+    }
+}
+@media (max-width: $ipad-max-width) {
+    .hidden-mobile {
+        display: none;
+    }
 }
 
 /*
@@ -54,32 +120,3 @@ img.inline-image {
 .green-xdark {
     color: $green-xdark;
 }
-
-/*
- * Buttons
- */
- .button  {
-     display: inline-block;
-     border: solid 1px;
-     padding: 10px 14px;
-     border-radius: 3px;
-     text-decoration: none;
-
-     &.button-green {
-         background-color: $green;
-         border-color: $green-dark;
-         color: $orange;
-     }
-
-     &.button-red {
-         background-color: $red-dark;
-         border-color: $red-xdark;
-         color: $orange;
-     }
-
-
-     &.button-lg {
-         font-size: $font-size-lg;
-         padding: 12px 18px;
-     }
- }

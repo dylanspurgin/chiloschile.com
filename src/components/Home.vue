@@ -28,8 +28,6 @@
         }
     }
     section.salsa-ctas-container {
-        display: flex;
-        flex-direction: row;
         margin: 40px 0;
     }
 
@@ -41,9 +39,6 @@
         padding: 0 40px;
         margin: 40px 20px;
         height: 180px;
-        background-color: $white;
-        border-radius: 6px;
-        border: solid 1px $green;
 
         img.salsa-cta-image {
             height: 280px;
@@ -62,7 +57,31 @@
             padding: 0;
             font-style: italic;
         }
+    }
 
+    // Mobile specific styling
+    @media (max-width: $mobile-max-width) {
+        section.hero {
+            .hero-lead-in {
+                position: relative;
+                padding: 20px;
+                text-align: center;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        section.salsa-cta {
+            padding: 0 20px;
+            margin: 40px 0px 80px;
+            height: 180px;
+
+            img.salsa-cta-image {
+                height: 60vw;
+                margin-top: -50px;
+            }
+        }
     }
 </style>
 
@@ -84,8 +103,8 @@
                 <a href="http://shop.chiloschile.com/">mixed case</a> containing
                 half red and half green!</p>
 
-            <section class="salsa-ctas-container">
-                <section class="salsa-cta">
+            <section class="salsa-ctas-container stacked-on-mobile">
+                <section class="salsa-cta cc-panel">
                     <img class="salsa-cta-image" v-bind:src="salsaRedImage" />
                     <section class="salsa-cta-copy red-xdark">
                         <h2>Red Lid</h2>
@@ -94,11 +113,12 @@
                     </section>
                 </section>
 
-                <section class="salsa-cta">
+                <section class="salsa-cta cc-panel">
                     <img class="salsa-cta-image" v-bind:src="salsaRedImage" />
                     <section class="salsa-cta-copy green-xdark">
                         <h2>Green Lid</h2>
-                        <h3>Milder but not Mild</h3>
+                        <h3 class="hidden-mobile">Milder but not Mild</h3>
+                        <h3 class="hidden-tablet">Milder, not Mild</h3>
                         <a class="button button-green" href="http://shop.chiloschile.com/">Shop Now</a>
                     </section>
                 </section>
@@ -108,7 +128,8 @@
             <p>
                 <img v-bind:src="jalapenoImage" class="inline-image"/>
                 The chile (or chili) pepper is the fruit of plants from the genus
-                Capsicum, members of the nightshade family. Capsicum annuum is
+                <span class="italic">Capsicum</span>, members of the nightshade
+                family. <span class="italic">Capsicum annuum</span> is
                 the most common and extensively cultivated species and includes
                 many common varieties such as bell peppers, wax, cayenne,
                 jalapeños, chiltepin, and all forms of New Mexico chile.</p>

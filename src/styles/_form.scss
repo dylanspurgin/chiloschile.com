@@ -1,0 +1,75 @@
+.form-group {
+    margin-bottom: 8px;
+}
+.form-group-vertical {
+    label {
+        display: block;
+    }
+}
+
+.help {
+    color: $red;
+}
+
+/*
+ * Buttons
+ */
+ .button  {
+     display: inline-block;
+     border: solid 1px;
+     padding: 10px 14px;
+     border-radius: 3px;
+     text-decoration: none;
+
+     &.button-green {
+         background-color: $green;
+         border-color: $green-dark;
+         color: $orange;
+     }
+
+     &.button-red {
+         background-color: $red-dark;
+         border-color: $red-xdark;
+         color: $orange;
+     }
+
+
+     &.button-lg {
+         font-size: $font-size-lg;
+         padding: 12px 18px;
+     }
+ }
+
+
+input, textarea {
+    border: solid 1px $black;
+    width: 100%;
+}
+
+// PHONE
+@media (max-width: $mobile-max-width) {
+    input, textarea {
+        font-size: $font-size-lg;
+    }
+    .button {
+        font-size: $font-size-lg;
+    }
+}
+// TABLET
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    input, textarea{
+        font-size: $font-size-md;
+    }
+    .button {
+        font-size: $font-size-md;
+    }
+}
+// IPAD PRO & DESKTOP
+@media (min-width: $desktop-min-width) {
+    input, textarea {
+        font-size: $font-size-md;
+    }
+    .button {
+        font-size: $font-size-md;
+    }
+}

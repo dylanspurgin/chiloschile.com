@@ -30,6 +30,7 @@
 
     }
     section.branding {
+        z-index: 1;
         height: 180px;
         width: 180px;
         position: relative;
@@ -56,12 +57,10 @@
         position: absolute;
         bottom: 0;
         width: 100%;
-        z-index: -1;
         text-align: right;
         left: 0;
         padding-right: 80px;
 
-        // display: flex;
         line-height: $font-size-xxl;
         background-color: $red;
         a.menu-item {
@@ -70,16 +69,60 @@
             align-self: flex-end;
             color: $yellow-x-light;
             text-transform: uppercase;
-            margin-bottom: 1px;
+            border-bottom: solid 2px $red;
             font-weight: bold;
         }
         a.menu-item:hover {
-            &::after {
-                content: '';
-                position: relative;
-                display: block;
-                border-bottom: solid 1px $yellow;
+            border-bottom: solid 2px $yellow;
+        }
+        a.menu-item.router-link-active {
+            border-bottom: solid 2px $yellow;
+            color: $yellow;
+        }
+    }
+
+    // Mobile specific styling
+    @media (max-width: $mobile-max-width) {
+
+        section.header-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            height: 80px;
+
+        }
+
+        section.branding {
+            height: 100px;
+            width: 100px;
+            position: relative;
+            top: 8px;
+            left: 10px;
+            border-radius: 50px;
+            background-color: $yellow-x-light;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            border: 4px $red solid;
+
+            img.header-logo {
+                height: 66px;
+                margin-top: -6px;
             }
+        }
+
+        nav {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: right;
+            left: 0;
+            padding-right: 10px;
         }
     }
 </style>
@@ -88,7 +131,9 @@
     <header>
         <section class="header-content boxed">
             <section class="branding">
-                <img v-bind:src="logoImage" class="header-logo" />
+                <router-link :to="{name: 'Home'}">
+                    <img v-bind:src="logoImage" class="header-logo" />
+                </router-link>
             </section>
             <nav>
                 <a class="menu-item" href="https://store.chiloschile.com">Shop Salsa</a>
