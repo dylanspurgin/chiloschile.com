@@ -19,25 +19,7 @@ html {
     box-sizing: inherit;
 }
 
-a {
-    color: $red;
-}
-
-h1 {
-    font-size: $font-size-xxl;
-    line-height: $font-size-xxl;
-}
-h2 {
-    font-size: $font-size-xl;
-    line-height: $font-size-xl;
-}
-
-#app {
-    font-family: $font-family;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: $black;
-
+#app {    
     // sticky footer
     min-height: 100%;
     display: flex;
@@ -45,18 +27,9 @@ h2 {
 
     position: relative;
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
 }
 
-.site-content {
-    flex: 1;
-    background-color: $brown-x-light;
-}
-.content-row {
-    padding: 40px;
-}
 </style>
 
 <template>

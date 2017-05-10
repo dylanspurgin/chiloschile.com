@@ -18,7 +18,7 @@ footer {
 </style>
 
 <template>
-    <footer>
+    <footer class="site-padding boxed">
         <nav>
             <router-link class="menu-item" :to="{name: 'Home'}">
                 Home</router-link>

@@ -1,0 +1,85 @@
+body {
+    font-family: $font-family;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $black;
+    font-size: $font-size-md;
+}
+
+/*
+ * Elements
+ */
+a {
+    color: $red;
+}
+h1 {
+    font-size: $font-size-xxl;
+    line-height: 120%;
+}
+h2 {
+    font-size: $font-size-xl;
+    line-height: $font-size-xl;
+}
+.site-content {
+    h1.section-header,
+    h2.section-header {
+        margin-top: 60px;
+        text-transform: uppercase;
+        border-bottom: solid $green 2px;
+        color: $green;
+    }
+}
+
+img.inline-image {
+    width: 200px;
+    border: solid 2px $red;
+    border-radius: 3px;
+    float: left;
+    margin: auto 20px 20px auto;
+}
+
+/*
+ * Colors
+ */
+.red {
+    color: $red;
+}
+.red-xdark {
+    color: $red-xdark;
+}
+
+.green {
+    color: $green;
+}
+.green-xdark {
+    color: $green-xdark;
+}
+
+/*
+ * Buttons
+ */
+ .button  {
+     display: inline-block;
+     border: solid 1px;
+     padding: 10px 14px;
+     border-radius: 3px;
+     text-decoration: none;
+
+     &.button-green {
+         background-color: $green;
+         border-color: $green-dark;
+         color: $orange;
+     }
+
+     &.button-red {
+         background-color: $red-dark;
+         border-color: $red-xdark;
+         color: $orange;
+     }
+
+
+     &.button-lg {
+         font-size: $font-size-lg;
+         padding: 12px 18px;
+     }
+ }

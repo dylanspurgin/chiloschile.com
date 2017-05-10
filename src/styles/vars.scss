@@ -1,17 +1,28 @@
 
 $red: #db2c32;
 $green: #005200;
-$yellow: #FEFF01;
-$black: darken(desaturate($green, 25%), 15%);
+$logo-yellow: #ffe600;
 
-$yellow-x-light: lighten(desaturate($yellow, 45%), 45%);
+$green-dark: darken($green, 10%);
+$green-xdark: darken($green, 10%);
+
+$red-dark: darken($red, 10%);
+$red-xdark: darken($red, 30%);
+
+$orange: lighten(mix($logo-yellow, $red), 15%);
+
+$yellow: lighten(desaturate($logo-yellow, 0%), 10%);
+$yellow-x-light: lighten(desaturate($logo-yellow, 45%), 45%);
 $brown-x-light: lighten(mix($red, $green), 65%);
 
-$font-family: arial, helvetica, sans-serif;
+$black: darken(desaturate($green, 25%), 10%);
+$white: $yellow-x-light;
+
+$font-family: 'Dosis', arial, helvetica, sans-serif;
 
 $font-size-xs: 12px;
 $font-size-sm: 14px;
-$font-size-md: 16px;
-$font-size-lg: 24px;
+$font-size-md: 18px;
+$font-size-lg: 20px;
 $font-size-xl: 28px;
 $font-size-xxl: 36px;
