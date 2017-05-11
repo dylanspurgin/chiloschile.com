@@ -20,6 +20,9 @@ h2 {
     font-size: $font-size-xl;
     line-height: $font-size-xl;
 }
+dt {
+    font-weight: bold;
+}
 
 
 /*
@@ -51,6 +54,24 @@ h2 {
     background-color: $white;
     border-radius: 6px;
     border: solid 1px $green;
+}
+
+.cc-table {
+    width: 100%;
+    padding: 20px 40px;
+    background-color: $white;
+    border-radius: 6px;
+
+    th {
+        border-bottom: solid $green 1px;
+        background-color: $white;
+    }
+    td {
+        padding: 4px 8px;
+    }
+    tr:nth-child(odd) {
+        background-color: $brown-x-light;
+    }
 }
 
 img.inline-image {

@@ -15,7 +15,7 @@
         width: 100%;
         margin: 0 auto;
 
-        background-color: $yellow-x-light;
+        background-color: $white;
         box-shadow: $header-shadow;
 
         h1 {
@@ -59,14 +59,23 @@
         position: absolute;
         bottom: 0;
         width: 100%;
+
         text-align: right;
         left: 0;
         padding-right: 80px;
 
         line-height: $font-size-xxl;
         background-color: $red;
+
+        height: 80px;
+        background-position: top;
+        background-size: auto 40px;
+        background-repeat: repeat-x;
+        padding-top: 42px;
+
         a.menu-item {
             text-decoration: none;
+            margin-top: 40px;
             margin-left: 20px;
             align-self: flex-end;
             color: $yellow-x-light;
@@ -129,7 +138,7 @@
                     <img v-bind:src="logoImage" class="header-logo" />
                 </router-link>
             </section>
-            <nav>
+            <nav v-bind:style="{ backgroundImage: 'url(' + trimImage + ')' }">
                 <a class="menu-item" href="https://store.chiloschile.com">Shop Salsa</a>
                 <router-link class="menu-item" :to="{name: 'Contact'}">
                     Contact
@@ -141,12 +150,14 @@
 
 <script>
 const logoImage = require('../assets/chilos-logo.png')
+const trimImage = require('../assets/trim.png')
 
 export default {
     name: 'cc-header',
     data: () => {
         return {
-            logoImage
+            logoImage,
+            trimImage
         }
     }
 }

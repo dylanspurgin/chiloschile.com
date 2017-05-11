@@ -80,13 +80,14 @@
         }
 
         section.salsa-cta {
-            padding: 0 20px;
+            padding: 0 10px;
             margin: 40px 0px 80px;
-            height: 180px;
+            height: 52vw;
 
             img.salsa-cta-image {
                 height: 60vw;
-                margin-top: -50px;
+                margin-top: -4vw;
+                margin-left: -10vw;
             }
         }
     }
@@ -97,18 +98,20 @@
         <section class="hero">
             <section class="hero-lead-in">
                 <h1>Authentic salsa made from fresh ingredients and no preservatives.</h1>
-                <a href="http://shop.chiloschile.com/" class="button button-lg button-red">Shop Now</a>
+                <a href="http://shop.chiloschile.com/" class="button button-lg button-cta button-red">Shop Now</a>
             </section>
         </section>
 
         <section class="content-row content-padding">
 
             <h2 class="section-header">Highway 28 Salsa</h2>
-            <p>We make our world famous salsa in both heat levels: Hot and
+            <p>Our salsa is made in Mesilla, NM from ingredients grown right
+                here in the Mesilla Valley along Highway 28.</p>
+            <p>It comes in two pungency levels to suite your taste; Hot and
                 Not-quite-as-hot. Both are made with the same honest ingredients.
-                Choose your favorite below or grab a
+                Choose your favorite or grab a
                 <a href="http://shop.chiloschile.com/">mixed case</a> containing
-                half red and half green!</p>
+                half red and half green.</p>
 
             <section class="salsa-ctas-container stacked-on-mobile">
                 <section class="salsa-cta cc-panel">
@@ -116,7 +119,8 @@
                     <section class="salsa-cta-copy red-xdark">
                         <h2>Red Lid</h2>
                         <h3>Original Red Hot</h3>
-                        <a class="button button-red" href="http://shop.chiloschile.com/">Shop Now</a>
+                        <a class="button button-red button-cta"
+                            href="http://shop.chiloschile.com/">Shop<span class="hidden-mobile"> Now</span></a>
                     </section>
                 </section>
 
@@ -126,7 +130,8 @@
                         <h2>Green Lid</h2>
                         <h3 class="hidden-mobile">Milder but not Mild</h3>
                         <h3 class="hidden-tablet">Milder, not Mild</h3>
-                        <a class="button button-green" href="http://shop.chiloschile.com/">Shop Now</a>
+                        <a class="button button-green button-cta"
+                            href="http://shop.chiloschile.com/">Shop<span class="hidden-mobile"> Now</span></a>
                     </section>
                 </section>
             </section>
