@@ -18,8 +18,11 @@
             flex-direction: column;
             h1 {
                 color: $white;
+                font-size: 50px;
+                line-height: 112%;
                 font-weight: bold;
-                -webkit-text-stroke: 1px $black;
+                text-shadow: $green-xdark 2px 2px 1px;
+                -webkit-text-stroke: $green-xdark 1px;
                 margin-bottom: 20px;
             }
             .button {
@@ -69,6 +72,10 @@
                 width: 100%;
                 display: flex;
                 flex-direction: column;
+
+                h1 {
+                    font-size: 40px;
+                }
             }
         }
 

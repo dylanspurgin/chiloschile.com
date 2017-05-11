@@ -19,7 +19,7 @@ html {
     box-sizing: inherit;
 }
 
-#app {    
+#app {
     // sticky footer
     min-height: 100%;
     display: flex;

@@ -1,11 +1,12 @@
 <style lang="scss" scoped>
     $header-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
-    // $header-logo-shadow: rgba(0, 0, 0, 0.25) 0px 3px 5px 5px;
     $header-logo-shadow: rgba(0, 0, 0, 0.25) 0px 3px 5px -2px;
+    $header-logo-shadow: $red 0px 0px 4px 1px;
+
+    $header-logo-border: one; // 4px $red solid;
 
     header {
         z-index: 1;
-        // background-color: $red;
 
         display: flex;
         flex-direction: column;
@@ -14,6 +15,7 @@
         width: 100%;
         margin: 0 auto;
 
+        background-color: $yellow-x-light;
         box-shadow: $header-shadow;
 
         h1 {
@@ -44,7 +46,7 @@
         -webkit-box-shadow: $header-logo-shadow;
         -moz-box-shadow: $header-logo-shadow;
         box-shadow: $header-logo-shadow;
-        border: 6px $red solid;
+        border: $header-logo-border;
 
         img.header-logo {
             height: 120px;
@@ -100,14 +102,6 @@
             top: 8px;
             left: 10px;
             border-radius: 50px;
-            background-color: $yellow-x-light;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            -webkit-box-shadow: none;
-            -moz-box-shadow: none;
-            box-shadow: none;
-            border: 4px $red solid;
 
             img.header-logo {
                 height: 66px;

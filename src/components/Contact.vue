@@ -26,9 +26,9 @@
 
                 <section class="contact-info">
                     <section>
-                        <h3>We'd love to hear from you</h3>
+                        <h3>We'd love to hear from you.</h3>
                         <p>We always value hearing from our customers. Use the
-                            contact info or form below to get in touch. We'll
+                            contact info or form to get in touch and we'll
                             respond as quickly as possible!</p>
                     </section>
                     <address>
@@ -61,7 +61,7 @@
 
                     <div v-if="formSubmitted && formSuccess" class="thanks">
                         <h3>Thanks!</h3>
-                        <p>I'll respond to {{email}} just as quickly as I am able.</p>
+                        <p>We'll use {{email}} when responding.</p>
                         <a href="#" v-on:click.stop.prevent="resetForm()">Send another message</a>
                     </div>
 
