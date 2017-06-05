@@ -1,7 +1,6 @@
 <style lang="scss" scoped>
     $header-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
-    $header-logo-shadow: rgba(0, 0, 0, 0.25) 0px 3px 5px -2px;
-    $header-logo-shadow: $red 0px 0px 4px 1px;
+    $header-logo-shadow: $black 0px 0px 3px 1px;
 
     $header-logo-border: one; // 4px $red solid;
 
@@ -18,12 +17,18 @@
         background-color: $white;
         box-shadow: $header-shadow;
 
+        background-color: $red;
+        background-position: top;
+        background-size: auto 70px;
+        background-repeat: repeat-x;
+
         h1 {
             margin: 0;
             padding: 0;
         }
     }
     section.header-content {
+        position: relative;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -33,12 +38,12 @@
     }
     section.branding {
         z-index: 1;
-        height: 180px;
-        width: 180px;
+        height: 240px;
+        width: 240px;
         position: relative;
         top: 8px;
         left: 40px;
-        border-radius: 90px;
+        border-radius: 140px;
         background-color: $yellow-x-light;
         display: flex;
         align-items: center;
@@ -49,8 +54,9 @@
         border: $header-logo-border;
 
         img.header-logo {
-            height: 120px;
+            height: 170px;
             margin-top: -16px;
+
         }
     }
     nav {
@@ -62,16 +68,11 @@
 
         text-align: right;
         left: 0;
-        padding-right: 80px;
+        padding-right: 40px;
 
         line-height: $font-size-xxl;
-        background-color: $red;
 
-        height: 80px;
-        background-position: top;
-        background-size: auto 40px;
-        background-repeat: repeat-x;
-        padding-top: 42px;
+        height: 40px;
 
         a.menu-item {
             text-decoration: none;
@@ -95,6 +96,20 @@
     // Mobile specific styling
     @media (max-width: $mobile-max-width) {
 
+        header {
+            background-position: 0px -30px;
+
+            nav {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                text-align: right;
+                left: 0;
+                padding-right: 10px;
+            }
+        }
+
         section.header-content {
             display: flex;
             flex-direction: row;
@@ -117,29 +132,19 @@
                 margin-top: -6px;
             }
         }
-
-        nav {
-            display: block;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            text-align: right;
-            left: 0;
-            padding-right: 10px;
-        }
     }
 </style>
 
 <template>
-    <header>
+    <header v-bind:style="{ backgroundImage: 'url(' + trimImage + ')' }">
         <section class="header-content boxed">
             <section class="branding">
                 <router-link :to="{name: 'Home'}">
                     <img v-bind:src="logoImage" class="header-logo" />
                 </router-link>
             </section>
-            <nav v-bind:style="{ backgroundImage: 'url(' + trimImage + ')' }">
-                <a class="menu-item" href="https://store.chiloschile.com">Shop Salsa</a>
+            <nav>
+                <a class="menu-item" href="https://store.chiloschile.com">Shop<span class="hidden-mobile"> Salsa</span></a>
                 <router-link class="menu-item" :to="{name: 'Contact'}">
                     Contact
                 </router-link>

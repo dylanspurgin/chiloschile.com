@@ -4,16 +4,20 @@ $green: #005200;
 $logo-yellow: #ffe600;
 
 $green-dark: darken($green, 10%);
-$green-xdark: darken($green, 10%);
+$green-x-dark: darken($green, 10%);
+$green-light: lighten(desaturate($green, 65%), 15%);
 $green-x-light: lighten(desaturate($green, 55%), 75%);
 
+$red-light: lighten(desaturate($red, 15%), 5%);
 $red-dark: darken($red, 10%);
-$red-xdark: darken($red, 30%);
+$red-x-dark: darken($red, 30%);
 
 $orange: lighten(mix($logo-yellow, $red), 15%);
 
 $yellow: lighten(desaturate($logo-yellow, 0%), 10%);
+$yellow-light: lighten(desaturate($logo-yellow, 15%), 25%);
 $yellow-x-light: lighten(desaturate($logo-yellow, 45%), 45%);
+$yellow-x-dark: darken(desaturate($logo-yellow, 45%), 45%);
 
 $brown-x-light: lighten(mix($red, $green), 65%);
 
@@ -22,14 +26,19 @@ $white: $yellow-x-light;
 
 
 // FONTS
-$font-family: 'Dosis', arial, helvetica, sans-serif;
+$font-family--body: 'Open Sans', sans-serif;
+$font-family--heading: 'Dosis', arial, helvetica, sans-serif;
 
 $font-size-xs: 12px;
 $font-size-sm: 14px;
 $font-size-md: 18px;
 $font-size-lg: 20px;
-$font-size-xl: 28px;
+$font-size-xl: 32px;
 $font-size-xxl: 36px;
+
+
+// LAYOUT
+$site-max-width: 1200px;
 
 
 // BREAKPOINTS

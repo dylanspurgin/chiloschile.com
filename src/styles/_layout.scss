@@ -1,12 +1,11 @@
 .site-content {
     flex: 1;
-    background-color: $brown-x-light;
     padding-bottom: 40px;
 }
 
 .boxed {
     width: 100%;
-    max-width: 1200px;
+    max-width: $site-max-width;
     align-self: center;
 }
 

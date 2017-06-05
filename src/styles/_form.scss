@@ -28,13 +28,16 @@
      &.button-green {
          background-color: $green;
          border-color: $green-dark;
-         color: $orange;
      }
 
      &.button-red {
          background-color: $red-dark;
-         border-color: $red-xdark;
-         color: $orange;
+         border-color: $red-x-dark;
+     }
+
+     &.button-yellow {
+         background-color: $yellow;
+         border-color: $yellow-x-dark;
      }
 
 

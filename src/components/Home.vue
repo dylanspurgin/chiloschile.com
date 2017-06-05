@@ -2,7 +2,7 @@
     section.hero {
         width: 100%;
         height: 400px;
-        background-image: url('/static/hero.jpg');
+        background-image: url('/static/hero_002.jpg');
         background-position: center;
         background-size: cover;
         position: relative;
@@ -21,8 +21,8 @@
                 font-size: 50px;
                 line-height: 112%;
                 font-weight: bold;
-                text-shadow: $green-xdark 2px 2px 1px;
-                -webkit-text-stroke: $green-xdark 1px;
+                text-shadow: $green-x-dark 2px 2px 1px;
+                -webkit-text-stroke: $green-x-dark 1px;
                 margin-bottom: 20px;
             }
             .button {
@@ -37,23 +37,23 @@
     section.salsa-cta {
         display: flex;
         flex-direction: row;
-        flex-grow: 1;
-        justify-content: space-around;
-        padding: 0 40px;
-        margin: 40px 20px;
-        height: 180px;
+        justify-content: center;
+        align-items: center;
+
+        .salsa-cta-heading {
+        }
 
         img.salsa-cta-image {
-            height: 280px;
-            margin-top: -50px;
+            height: 380px;
         }
 
         .salsa-cta-copy {
             text-align: center;
+            margin-left: 20px;
         }
 
         h2 {
-            margin: 20px 0 10px 0;
+            margin: 10px 0 10px 0;
         }
         h3 {
             margin: 10px 0 20px 0;
@@ -80,14 +80,15 @@
         }
 
         section.salsa-cta {
-            padding: 0 10px;
-            margin: 40px 0px 80px;
-            height: 52vw;
-
             img.salsa-cta-image {
-                height: 60vw;
-                margin-top: -4vw;
-                margin-left: -10vw;
+                height: 80vw;
+            }
+
+            &.salsa-cta--green {
+                .salsa-cta-copy {
+                    margin-left: 0;
+                    margin-right: 20px;
+                }
             }
         }
     }
@@ -97,43 +98,66 @@
     <section class="site-content boxed">
         <section class="hero">
             <section class="hero-lead-in">
-                <h1>Authentic salsa made from fresh ingredients and no preservatives.</h1>
-                <a href="http://shop.chiloschile.com/" class="button button-lg button-cta button-red">Shop Now</a>
+                <h1>Authentic salsa made from fresh ingredients in Mesilla, NM</h1>
+                <a href="http://shop.chiloschile.com/" class="button button-lg button-cta button-yellow">Shop Now</a>
             </section>
         </section>
 
         <section class="content-row content-padding">
 
             <h2 class="section-header">Highway 28 Salsa</h2>
-            <p>Our salsa is made in Mesilla, NM from ingredients grown right
-                here in the Mesilla Valley along Highway 28.</p>
-            <p>It comes in two pungency levels to suite your taste; Hot and
+            <!-- <p>Our salsa is made in Mesilla, NM from ingredients grown right
+                here in the Mesilla Valley along Highway 28.</p> -->
+            <!-- <p>We offer two pungency levels to suite your taste; Hot and
                 Not-quite-as-hot. Both are made with the same honest ingredients.
                 Choose your favorite or grab a
                 <a href="http://shop.chiloschile.com/">mixed case</a> containing
-                half red and half green.</p>
+                half red and half green.</p> -->
 
             <section class="salsa-ctas-container stacked-on-mobile">
-                <section class="salsa-cta cc-panel">
+
+                <!-- red table/desktop -->
+                <section class="salsa-cta">
                     <img class="salsa-cta-image" v-bind:src="salsaRedImage" />
-                    <section class="salsa-cta-copy red-xdark">
-                        <h2>Red Lid</h2>
-                        <h3>Original Red Hot</h3>
-                        <a class="button button-red button-cta"
+                    <section class="salsa-cta-copy cc-panel hidden-mobile">
+                        <h2 class="salsa-cta-heading red shadowed-text--black">Red Lid</h2>
+                        <h3 class="red shadowed-text--yellow">Original Red Hot</h3>
+                        <a class="button button-cta button-red yellow"
+                            href="http://shop.chiloschile.com/">Shop<span class="hidden-mobile"> Now</span></a>
+                    </section>
+                    <!-- mobile -->
+                    <section class="salsa-cta-copy hidden-tablet">
+                        <h2 class="salsa-cta-heading red shadowed-text--black">Red Lid</h2>
+                        <h3 class="red shadowed-text--yellow">Original Red Hot</h3>
+                        <a class="button button-cta button-red yellow"
                             href="http://shop.chiloschile.com/">Shop<span class="hidden-mobile"> Now</span></a>
                     </section>
                 </section>
 
-                <section class="salsa-cta cc-panel">
-                    <img class="salsa-cta-image" v-bind:src="salsaRedImage" />
-                    <section class="salsa-cta-copy green-xdark">
-                        <h2>Green Lid</h2>
-                        <h3 class="hidden-mobile">Milder but not Mild</h3>
-                        <h3 class="hidden-tablet">Milder, not Mild</h3>
-                        <a class="button button-green button-cta"
+                <!-- green tablet/desktop -->
+                <section class="salsa-cta salsa-cta--green hidden-mobile">
+                    <img class="salsa-cta-image" v-bind:src="salsaGreenImage" />
+                    <section class="salsa-cta-copy cc-panel green-xdark">
+                        <h2 class="salsa-cta-heading green shadowed-text--black">Green Lid</h2>
+                        <h3 class="hidden-mobile green shadowed-text--yellow">Milder but not Mild</h3>
+                        <h3 class="hidden-tablet green shadowed-text--yellow">Milder, not Mild</h3>
+                        <a class="button button-cta button-green yellow"
                             href="http://shop.chiloschile.com/">Shop<span class="hidden-mobile"> Now</span></a>
                     </section>
                 </section>
+
+                <!-- green mobile -->
+                <section class="salsa-cta salsa-cta--green hidden-tablet">
+                    <section class="salsa-cta-copy green-xdark">
+                        <h2 class="salsa-cta-heading green shadowed-text--black">Green Lid</h2>
+                        <h3 class="hidden-mobile green shadowed-text--yellow">Milder but not Mild</h3>
+                        <h3 class="hidden-tablet green shadowed-text--yellow">Milder, not Mild</h3>
+                        <a class="button button-cta button-green yellow"
+                            href="http://shop.chiloschile.com/">Shop<span class="hidden-mobile"> Now</span></a>
+                    </section>
+                    <img class="salsa-cta-image" v-bind:src="salsaGreenImage" />
+                </section>
+
             </section>
 
             <h2 class="section-header">Did you know?</h2>
@@ -155,13 +179,19 @@
 </template>
 
 <script>
-const salsaRedImage = require('../assets/salsa-red.png')
+const ctaBgImage = require('../assets/cta-bg.jpg')
+
+const salsaRedImage = require('../assets/salsa-red.jpg')
+const salsaGreenImage = require('../assets/salsa-green.jpg')
 const jalapenoImage = require('../assets/jalapeno.jpg')
+
 export default {
     name: 'home',
     data: () => {
         return {
+            ctaBgImage,
             salsaRedImage,
+            salsaGreenImage,
             jalapenoImage
         }
     }
