@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
+import About from '@/components/About'
 import Contact from '@/components/Contact'
 import Policies from '@/components/Policies'
 import Trivia from '@/components/Trivia'
@@ -14,6 +15,11 @@ export default new Router({
             path: '/',
             name: 'Home',
             component: Home
+        },
+        {
+            path: '/about',
+            name: 'About',
+            component: About
         },
         {
             path: '/contact',

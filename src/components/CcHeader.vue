@@ -145,9 +145,10 @@
             </section>
             <nav>
                 <a class="menu-item" href="https://store.chiloschile.com">Shop<span class="hidden-mobile"> Salsa</span></a>
+                <router-link class="menu-item" :to="{name: 'About'}">
+                    About</router-link>
                 <router-link class="menu-item" :to="{name: 'Contact'}">
-                    Contact
-                </router-link>
+                    Contact</router-link>
             </nav>
         </section>
     </header>
