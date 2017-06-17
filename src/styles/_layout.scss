@@ -12,3 +12,29 @@
 .content-padding {
     padding: 0 40px;
 }
+
+.two-columns {
+    display: flex;
+
+    &>* {
+        width: 50%;
+    }
+    &>:first-child {
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: $ipad-max-width) {
+    .two-columns {
+        flex-direction: column;
+
+        &>* {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        &>:first-child {
+            padding-right: 0;
+        }
+    }
+}
