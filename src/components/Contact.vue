@@ -1,4 +1,7 @@
 <style lang="scss" scoped>
+    .header-image {
+        background-image: url('/static/contact_header.jpg');
+    }
     .contact-info {
         min-width: 40%;
     }
@@ -17,10 +20,13 @@
 </style>
 
 <template>
-    <section class="site-content boxed header-padding">
-        <section class="content-row content-padding">
+    <section class="site-content boxed">
 
-            <h2 class="section-header">Contact</h2>
+        <section class="header-image">
+            <h1 class="page-title">Contact</h1>
+        </section>
+
+        <section class="content-row content-padding">
 
             <section class="stacked-on-mobile">
 

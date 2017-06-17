@@ -20,6 +20,7 @@ $yellow-x-light: lighten(desaturate($logo-yellow, 45%), 45%);
 $yellow-x-dark: darken(desaturate($logo-yellow, 45%), 45%);
 
 $brown-x-light: lighten(mix($red, $green), 65%);
+$brown: mix($red, $green);
 
 $black: darken(desaturate($green, 25%), 10%);
 $white: $yellow-x-light;

@@ -15,11 +15,26 @@
 
 .two-columns {
     display: flex;
-    
+
     &>* {
         width: 50%;
     }
-    &>*:nth-of-type(1) {
-        padding-right: 20px;
+    &>:first-child {
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: $ipad-max-width) {
+    .two-columns {
+        flex-direction: column;
+
+        &>* {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        &>:first-child {
+            padding-right: 0;
+        }
     }
 }
