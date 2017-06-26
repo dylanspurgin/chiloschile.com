@@ -1,4 +1,4 @@
 module.exports = {
   NODE_ENV: '"production"',
-  API: '"http://chilos.dylanspurgin.com/static/server"'
+  API: '"http://chiloschile.com/static/server"'
 }
