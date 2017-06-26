@@ -99,7 +99,7 @@
         <section class="hero">
             <section class="hero-lead-in">
                 <h1>Authentic salsa made from fresh ingredients in Mesilla, NM</h1>
-                <a href="http://shop.chiloschile.com/" class="button button-lg button-cta button-yellow">Shop Now</a>
+                <a href="http://shop.chiloschile.com/category.sc?categoryId=2" class="button button-lg button-cta button-yellow">Shop Now</a>
             </section>
         </section>
 
@@ -123,14 +123,14 @@
                         <h2 class="salsa-cta-heading red shadowed-text--black">Red Lid</h2>
                         <h3 class="red shadowed-text--yellow">Original Red Hot</h3>
                         <a class="button button-cta button-red yellow"
-                            href="http://shop.chiloschile.com/">Shop<span class="hidden-mobile"> Now</span></a>
+                            href="http://shop.chiloschile.com/category.sc?categoryId=2">Shop<span class="hidden-mobile"> Now</span></a>
                     </section>
                     <!-- mobile -->
                     <section class="salsa-cta-copy hidden-tablet">
                         <h2 class="salsa-cta-heading red shadowed-text--black">Red Lid</h2>
                         <h3 class="red shadowed-text--yellow">Original Red Hot</h3>
                         <a class="button button-cta button-red yellow"
-                            href="http://shop.chiloschile.com/">Shop<span class="hidden-mobile"> Now</span></a>
+                            href="http://shop.chiloschile.com/category.sc?categoryId=2">Shop<span class="hidden-mobile"> Now</span></a>
                     </section>
                 </section>
 
@@ -142,7 +142,7 @@
                         <h3 class="hidden-mobile green shadowed-text--yellow">Milder but not Mild</h3>
                         <h3 class="hidden-tablet green shadowed-text--yellow">Milder, not Mild</h3>
                         <a class="button button-cta button-green yellow"
-                            href="http://shop.chiloschile.com/">Shop<span class="hidden-mobile"> Now</span></a>
+                            href="http://shop.chiloschile.com/category.sc?categoryId=2">Shop<span class="hidden-mobile"> Now</span></a>
                     </section>
                 </section>
 
@@ -153,7 +153,7 @@
                         <h3 class="hidden-mobile green shadowed-text--yellow">Milder but not Mild</h3>
                         <h3 class="hidden-tablet green shadowed-text--yellow">Milder, not Mild</h3>
                         <a class="button button-cta button-green yellow"
-                            href="http://shop.chiloschile.com/">Shop<span class="hidden-mobile"> Now</span></a>
+                            href="http://shop.chiloschile.com/category.sc?categoryId=2">Shop<span class="hidden-mobile"> Now</span></a>
                     </section>
                     <img class="salsa-cta-image" v-bind:src="salsaGreenImage" />
                 </section>
