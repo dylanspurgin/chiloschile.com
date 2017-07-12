@@ -9,7 +9,7 @@
             <h2 class="section-header">Policies</h2>
             <span class="strong">Chilo's Chile</span> provides website features to you subject to the following conditions. If you visit or shop at chiloschile.com, you accept these conditions.
 
-            <h3>Shipping</h3>
+            <h3 id="shipping">Shipping</h3>
             <p>Please be aware of any specific delivery policies at your
                 shipping destination. Once your Chilo’s Chile product leaves
                 our facility they are at the mercy of the carrier. Chilo’s Chile
@@ -20,7 +20,7 @@
                 perishable nature of our products, it is best for someone to be
                 present to receive delivery.</p>
 
-            <h3>Returns</h3>
+            <h3 id="returns">Returns</h3>
             <p>If you are not completely satisfied with a Chilo's Chile order,
                 please return it for an exchange or merchandise credit. Returns
                 with the original purchase receipt will be exchanged or credited
@@ -38,7 +38,7 @@
                 <li>Action to be taken (replacement or merchandise credit)</li>
             </ul>
 
-            <h3>Privacy Notice</h3>
+            <h3 id="privacy">Privacy Notice</h3>
             <p>All of the information collected via this web site is used
                 exclusively for the purpose of fulfilling our customers' orders,
                 managing their accounts, and to inform customers directly about
@@ -54,7 +54,7 @@
                 address, and telephone number. Upon the receipt of your request
                 we will promptly delete you from our systems.</p>
 
-            <h3>Warranty</h3>
+            <h3 id="warranty">Warranty</h3>
             <p>There is no warranty, representation or condition of any kind;
                 and any warranty, express or implied, is herby excluded and
                 disclaimed including the implied warranty of merchantability and
@@ -74,8 +74,6 @@
                 a result for purchaser's negligence, whether deemed active or
                 passive and whether or not such negligence is the sole cause of
                 any such damage, loss or expense.</p>
-
-
 
         </section>
     </section>
