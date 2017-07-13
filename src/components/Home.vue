@@ -106,13 +106,15 @@
         <section class="content-row content-padding">
 
             <h2 class="section-header">Highway 28 Salsa</h2>
-            <!-- <p>Our salsa is made in Mesilla, NM from ingredients grown right
-                here in the Mesilla Valley along Highway 28.</p> -->
-            <!-- <p>We offer two pungency levels to suite your taste; Hot and
-                Not-quite-as-hot. Both are made with the same honest ingredients.
-                Choose your favorite or grab a
-                <a href="http://shop.chiloschile.com/">mixed case</a> containing
-                half red and half green.</p> -->
+            <section class="cc-panel cc-align-center cc-panel--yellow">
+                <h3>Our salsa is made in Mesilla, NM from ingredients grown right
+                    here in the Mesilla Valley along Highway 28.</h3>
+                <p>We offer two pungency levels to suite your taste; Hot and
+                    Not-quite-as-hot. Both are made with the same honest ingredients.
+                    Choose your favorite or grab a
+                    <a href="http://shop.chiloschile.com/Highway-28-Salsa-Red-Green-Mix-Case-of-12-x-16oz-Jars-0016.htm">mixed case</a> containing
+                    half red and half green.</p>
+            </section>
 
             <section class="salsa-ctas-container stacked-on-mobile">
 
@@ -123,14 +125,14 @@
                         <h2 class="salsa-cta-heading red shadowed-text--black">Red Lid</h2>
                         <h3 class="red shadowed-text--yellow">Original Red Hot</h3>
                         <a class="button button-cta button-red yellow"
-                            href="http://shop.chiloschile.com/category.sc?categoryId=2">Shop<span class="hidden-mobile"> Now</span></a>
+                            href="http://shop.chiloschile.com/Highway-28-Salsa-Red-Lid-Case-of-12-x-16oz-Jars-0005.htm">Shop<span class="hidden-mobile"> Now</span></a>
                     </section>
                     <!-- mobile -->
                     <section class="salsa-cta-copy hidden-tablet">
                         <h2 class="salsa-cta-heading red shadowed-text--black">Red Lid</h2>
                         <h3 class="red shadowed-text--yellow">Original Red Hot</h3>
                         <a class="button button-cta button-red yellow"
-                            href="http://shop.chiloschile.com/category.sc?categoryId=2">Shop<span class="hidden-mobile"> Now</span></a>
+                            href="http://shop.chiloschile.com/Highway-28-Salsa-Red-Lid-Case-of-12-x-16oz-Jars-0005.htm">Shop<span class="hidden-mobile"> Now</span></a>
                     </section>
                 </section>
 
@@ -142,7 +144,7 @@
                         <h3 class="hidden-mobile green shadowed-text--yellow">Milder but not Mild</h3>
                         <h3 class="hidden-tablet green shadowed-text--yellow">Milder, not Mild</h3>
                         <a class="button button-cta button-green yellow"
-                            href="http://shop.chiloschile.com/category.sc?categoryId=2">Shop<span class="hidden-mobile"> Now</span></a>
+                            href="http://shop.chiloschile.com/Highway-28-Salsa-Green-Lid-Case-of-12-x-16oz-Jars-0010.htm">Shop<span class="hidden-mobile"> Now</span></a>
                     </section>
                 </section>
 
@@ -153,7 +155,7 @@
                         <h3 class="hidden-mobile green shadowed-text--yellow">Milder but not Mild</h3>
                         <h3 class="hidden-tablet green shadowed-text--yellow">Milder, not Mild</h3>
                         <a class="button button-cta button-green yellow"
-                            href="http://shop.chiloschile.com/category.sc?categoryId=2">Shop<span class="hidden-mobile"> Now</span></a>
+                            href="http://shop.chiloschile.com/Highway-28-Salsa-Green-Lid-Case-of-12-x-16oz-Jars-0010.htm">Shop<span class="hidden-mobile"> Now</span></a>
                     </section>
                     <img class="salsa-cta-image" v-bind:src="salsaGreenImage" />
                 </section>
