@@ -119,6 +119,10 @@ dt {
     &.cc-panel--green {
         background: linear-gradient(180deg, $white 40%, $green-light 140%);
     }
+
+    &.cc-panel--yellow {
+        background: linear-gradient(180deg, $white 40%, $yellow 140%);
+    }
 }
 
 .cc-table {
