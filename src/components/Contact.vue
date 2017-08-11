@@ -36,6 +36,8 @@
                         <p>We always value hearing from our customers. Use the
                             contact info or form to get in touch and we'll
                             respond as quickly as possible!</p>
+                        <p>We'll never share your information with anyone,
+                            for any purpose or reason.</p>
                     </section>
                     <address>
                         <strong>Chilo's Chile Inc.</strong><br>

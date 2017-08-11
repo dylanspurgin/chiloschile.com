@@ -36,7 +36,7 @@
                         many choices and they choose Chilo's for it's quality.
                         And now even the New Mexico expatriats can enjoy the
                         same fresh salsa they used to get back home.</p>
-                    <p>No secrets. No preservatives. Just tomatoes, jalepenos, garlic and salt.
+                    <p>No secrets. Just tomatoes, jalepenos, garlic and salt.
                         You get fresh salsa delivered to you in every jar.</p>
                 </section>
                 <section class="hidden-mobile">

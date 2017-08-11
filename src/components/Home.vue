@@ -165,7 +165,7 @@
             <h2 class="section-header">Did you know?</h2>
             <p>
                 <img v-bind:src="jalapenoImage" class="inline-image"/>
-                The chile (or chili) pepper is the fruit of plants from the genus
+                The chile pepper is the fruit of plants from the genus
                 <span class="italic">Capsicum</span>, members of the nightshade
                 family. <span class="italic">Capsicum annuum</span> is
                 the most common and extensively cultivated species and includes
