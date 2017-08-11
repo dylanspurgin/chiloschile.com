@@ -32,7 +32,7 @@ footer {
                 Policies</router-link>
             <router-link class="menu-item" :to="{name: 'Trivia'}">
                 Chile Trivia</router-link>
-            <a class="menu-item" href="https://store.chiloschile.com">
+            <a class="menu-item" href="https://shop.chiloschile.com">
                 Store</a>
             <router-link class="menu-item" :to="{name: 'Contact'}">
                 Contact</router-link>
